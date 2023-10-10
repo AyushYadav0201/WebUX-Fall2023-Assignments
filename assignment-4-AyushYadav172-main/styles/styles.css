@@ -1,0 +1,545 @@
+/* Add styling for the header tabs */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Add margins on the left and right sides */
+.border-margin {
+    margin-left: 30px; /* Adjust the left margin as needed */
+    margin-right: 30px; /* Adjust the right margin as needed */
+}
+
+.header-align {
+    display: flex;
+    align-items: center;    
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-tab {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust spacing between tabs */
+    position: relative; /* Create a stacking context for pseudo-element */
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+}
+
+.husky {
+    width: 40px;
+    height: 40px;
+}
+
+.vertical-bar {
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold;
+    color: black; /* Set the color of the vertical bar */
+    margin: 0 -70px; /* Adjust spacing as needed */
+    line-height: 1; /* Adjust the line height to match the font size */
+}
+
+/* Create a very thin blue line at the bottom of the header on hover */
+.header-tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* On hover, scale the line and change its background color */
+.header-tab:hover::after {
+    transform: scaleX(1);
+    background-color: teal;
+}
+
+/* Set a fixed font size for the text */
+.header-tab .locate-text {
+    font-size: 16px; /* Adjust this value as needed */
+    text-align: center; /* Center-align the text */
+    color: black; /* Set the default text color */
+}
+
+/* Change text color on hover */
+.header-tab:hover .locate-text {
+    color: none;
+}
+
+/* Remove the default blue color and underline from the link text */
+.header-tab a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+}
+
+.star-margin {
+    margin-left: 0px;
+}
+
+/*Remove default blue color and underline from location */
+.location-link {
+    text-decoration: none; /* Remove underline */
+    color: orangered; /* Change color to orange */
+}
+
+/* Define the layout of header sections */
+.center-section {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 24px;
+    color: orangered;
+    margin-left: auto; /* Align to the right */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Style the clickable image */
+.clickable-image {
+    display: block; /* Make the image a block element to ensure it covers the entire link area */
+}
+
+/* Style the link (optional) */
+.image-link {
+    text-decoration: none; /* Remove the default underline for links */
+    display: inline-block; /* Make the link behave like an inline-block element */
+    border: 2px solid #ccc; /* Optional: Add a border to the clickable image */
+    border-radius: 5px; /* Optional: Add rounded corners to the border */
+}
+
+.locate {
+    display: flex;
+}
+
+.gps a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 10px;
+    vertical-align: middle;
+}
+
+/* Styles for the container holding the elements */
+.container {
+    display: flex;        /* Use flexbox to arrange child elements in a row */
+    align-items: center;  /* Vertically center-align child elements */
+  }
+  
+  .layout {
+    width: 70%; /* Make the container full width */
+    display: flex;        /* Use flexbox to arrange child elements in a row */
+    align-items: center;  /* Vertically center-align child elements */
+    justify-content: flex-end; /* Align the content to the extreme right */
+  }
+
+  .layout-stars {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styles for the box containing "4.2" */
+  .box {
+    border: 2px solid teal;    /* Add a teal border with 3px width */
+    border-radius: 5px;       /* Add border-radius for curved edges */
+    margin-left: 5px;
+}
+  
+  /* Styles for the "Very Good" text */
+  .bold-text {
+    font-weight: bold;      /* Make the text appear in bold font */
+    margin-left: 10px;      /* Add some spacing to the left of this element */
+  }
+
+    /* Style for the "Book Now" button */
+    .book-now-button {
+        background-color: teal; /* Set the background color to teal */
+        color: white; /* Set the text color to white */
+        padding: 10px 20px; /* Add padding to the button for better appearance */
+        border: none; /* Remove the default button border */
+        border-radius: 5px; /* Add rounded corners to the button */
+        cursor: pointer; /* Change the cursor to a pointer on hover */
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+
+.roomie {
+    width: 50px;
+    height: 50px;
+}
+
+/*Grid for Image 1*/
+.image-grid {
+    display: flex;
+    position: relative;
+    right: 35px;
+    margin-left: 50px   ;
+  }
+  
+  .container-images-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images-item {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 3px;
+    position: relative;
+    border-radius: 40px; 
+  }
+  
+.photoButton {
+    background-color: teal; /* Set the background color */
+    width: 140px; /* Set the desired width */
+    height: 43px; /* Set the desired height */
+    border: 2px solid teal; /* Add a border for styling */
+    border-radius: 5px;
+}
+
+.view-all-btn {
+    background-color: teal; /* Set the background color */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  button[type="submit"] {
+    background-color: teal;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/*Boxing 4.2 review*/
+.teal-box {
+    border: 2px solid teal;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.teal-box:hover {
+    background-color: #00796B; /* Change the background color on hover */
+}
+
+/*Boxing Stars*/
+.svg-box {
+    border: 2px solid teal;
+    width: 108px;
+    height: 64px;
+}
+
+.room-card {
+    display: flex;
+    align-items: center;
+}
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.room-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+.room-details p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.room-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.room-price h2 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.book-button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Add rounded corners to the button */
+    font-size: 16px;
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* CSS for the layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.icon-amenities {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+}
+
+.overall-review {
+    padding: 10px;
+}
+
+/* Style the flag-view */
+.flag-view {
+    width: 20%; /* Make the container full width */
+    display: flex;
+    justify-content: flex-end; /* Align the content to the extreme right */
+}
+
+/* Style the circular image */
+.circular-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid #ccc; /* Optional: Add a border to the circle */
+}
+
+
+.button {
+    background-color: teal; /* Teal background color for the button */
+    color: white; /* White text color for the button text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+}
+
+/* styles.css */
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/*Amenities icons*/
+.icon {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next row if they don't fit */
+    align-items: center;
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.custom-item {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allow items to take up equal space horizontally */
+    max-width: 250px; /* Adjust the max width as needed */
+}
+
+/* Remove underline from the link */
+#more-link {
+    text-decoration: none;
+    color: orangered;
+    font-size: 16px;
+}
+
+/*SUbscription fomr*/
+
+.form-group {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="email"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.button-subscription {
+    text-align: right;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*Footer*/
+#subscribe{
+    height: 300px;
+    border: 0px;
+    background-color: rgb(182, 204, 204);
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-right:100px;
+    z-index: 2;
+    margin-bottom: -180px;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .form-group {
+    display: flex;
+    align-items: end;
+    vertical-align: middle;
+  }
+
+  .img-mailbox{
+    padding-left: 600px;
+  }
+
+  .subscribe-text{
+    padding-top: 40px;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 35px;
+  }
+
+  .newsletter-text{
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 35px;
+  }
+
+  .travel-text{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: 18px;
+  }
+
+  .get-inspired-text{
+    padding-left: 20px;
+    padding-top: 7px;
+  }
+
+  .email-input{
+    margin: 20px;
+    height: 50px;
+    width: 450px;
+    border: 0px;
+  }
+
+  .email-input::placeholder {
+    color: black; /* Set the placeholder text color to black */
+    padding: 10px;
+    font-size: 15px;
+}
+
+.sub-button{
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border: 0px;
+    color: white;
+    width: 100px;
+    border-radius: 4px;
+}
+
+.footer{
+    height: 200px;
+    background-color: #8DD3BB;
+    padding-top: 200px;
+    width: 100%; /* Make the wrapper take the full width of the body */
+    position: absolute; /* Position the wrapper absolutely within the body */
+    left: 0; /* Position it at the left of the body */
+    right: 0; /* Stretch the wrapper to the right of the body */
+}
+
+.footer-list-container{
+    display: flex;
+    position: relative;  
+  }
+  
+  .footer-list-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+  }
+
+.list-header{
+    padding: 0px;
+    margin:0px;
+}
+
+.footer-list-ul{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+}
+
+.footer-list-link{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+}
+
+.footer-list-column li{
+    padding-top: 12px;
+}
+
+.footer-list-container{
+    padding-left: 120px;
+}
+
+.footer-list-column:nth-child(2){
+    padding-left: 100px;
+}

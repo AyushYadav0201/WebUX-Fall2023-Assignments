@@ -1,0 +1,135 @@
+/* Footer Styles */
+
+/* Footer Container */
+.footer {
+    height: 200px;
+    background-color: #8DD3BB;
+    padding-top: 200px;
+    width: 100%; /* Make the wrapper take the full width of the body */
+    position: absolute; /* Position the wrapper absolutely within the body */
+    left: 0; /* Position it at the left of the body */
+    right: 0; /* Stretch the wrapper to the right of the body */
+}
+
+/* Footer List Container */
+.footer-list-container {
+    display: flex;
+    position: relative;
+}
+
+/* Footer List Column */
+.footer-list-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+/* List Header */
+.list-header {
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer List UL */
+.footer-list-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer List Link */
+.footer-list-link {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+}
+
+/* Footer List Column List Items */
+.footer-list-column li {
+    padding-top: 12px;
+}
+
+/* Adjust Padding for the Second Column */
+.footer-list-column:nth-child(2) {
+    padding-left: 100px;
+}
+
+/* Subscribe Section */
+#subscribe {
+    height: 300px;
+    border: 0px;
+    background-color: rgb(182, 204, 204);
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-right: 100px;
+    z-index: 2;
+    margin-bottom: -150px;
+    position: relative;
+    margin-top: 100px;
+}
+
+/* Form Group in Subscribe Section */
+.form-group {
+    display: flex;
+    align-items: end;
+    vertical-align: middle;
+}
+
+/* Mailbox Image */
+.img-mailbox {
+    padding-left: 800px;
+}
+
+/* Subscribe Text */
+.subscribe-text {
+    padding-top: 40px;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+/* Newsletter Text */
+.newsletter-text {
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+/* Travel Text */
+.travel-text {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* Get Inspired Text */
+.get-inspired-text {
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+/* Email Input */
+.email-input {
+    margin: 20px;
+    height: 50px;
+    width: 450px;
+    border: 0px;
+}
+
+/* Placeholder Styles for Email Input */
+.email-input::placeholder {
+    color: black; /* Set the placeholder text color to black */
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Subscribe Button */
+.sub-button {
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border: 0px;
+    color: white;
+    width: 100px;
+    border-radius: 4px;
+}

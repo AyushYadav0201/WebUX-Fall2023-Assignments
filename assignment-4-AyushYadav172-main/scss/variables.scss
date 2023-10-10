@@ -1,0 +1,120 @@
+/* Variables */
+$primary-color: teal;
+$secondary-color: orangered;
+$background-color: #8DD3BB;
+$text-color: black;
+$box-border: 2px solid $primary-color;
+$box-radius: 5px;
+
+/* Common Styles */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Links */
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+/* Buttons */
+.button {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $box-radius;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: darken($primary-color, 10%); /* Darken the primary color on hover */
+}
+
+/* Form Inputs */
+input[type="email"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: $box-radius;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Images */
+.room-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Tabs */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Footer */
+.footer {
+    height: 200px;
+    background-color: $background-color;
+    padding-top: 200px;
+    width: 100%; /* Make the wrapper take the full width of the body */
+    position: absolute; /* Position the wrapper absolutely within the body */
+    left: 0; /* Position it at the left of the body */
+    right: 0; /* Stretch the wrapper to the right of the body */
+}
+
+.footer-list-container {
+    display: flex;
+    position: relative;
+}
+
+.footer-list-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.list-header {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-list-ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    color: $text-color;
+    padding-top: 10px;
+}
+
+.footer-list-column li {
+    padding-top: 12px;
+}
+
+.footer-list-container {
+    padding-left: 120px;
+}
+
+.footer-list-column:nth-child(2) {
+    padding-left: 100px;
+}
