@@ -1,0 +1,11 @@
+{
+  "name": "assignment-6-ayushyadav172",
+  "version": "1.0.0",
+  "description": "**JavaScript Microblogging App**\r A simple microblogging application built with JavaScript, allowing users to create, view, and interact with blogs. Each blog consists of a title, content, author, and creation date. This application does not persist data on a server; it's for educational purposes and demonstrates JavaScript, HTML, and CSS skills.",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "npx sass scss/main.scss dist/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

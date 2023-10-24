@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MicroBlogging</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/home.css">-->
+    <link rel="stylesheet" href="dist/main.css">
+
+</head>
+<body>
+<div class="border-margin">
+<div class="navbar">
+    <div class="logo">
+        <img src="images/Logo1.1.png" class="logo" alt="">
+        </div>
+    <div class="nav-links">
+        <a href="#" class="nav-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" fill="#ffffff" class="bi bi-house-door" viewBox="0 0 16 16">
+                <path d="M12 2.5L2 12h3v9h6v-7h2v7h6v-9h3L12 2.5z"/>
+            </svg>
+            Home
+        </a>
+        <a href="#" class="nav-button">Sign In</a>
+    </div>
+</div>
+
+<!-- Navigation Bar Ends Here -->
+
+
+    <!-- Card-layout -->
+    <section class="blogs-section" id="blogSection">
+        <!-- The blog cards will be dynamically generated here using JavaScript -->
+    </section>
+
+    <section>
+        <!-- Create Function button -->
+        <button id="createButton" class="create-button">Write a Blog</button>
+        <div id="blogForm" class="hidden">
+            <h2 class="form-title">Create a New Blog</h2>
+            <input type="text" id="title" class="input-field" placeholder="Title">
+            <textarea id="content" class="input-field" placeholder="Content"></textarea>
+            <input type="text" id="author" class="input-field" placeholder="Author">
+            <input type="file" id="image" class="input-field" accept="image/*">
+            <button id="saveButton" class="save-button">Create</button>
+        </div>
+        <div id="blogList"></div>
+        
+        <!-- Modal for updating content -->
+        <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content">
+                <h2>Edit Blog Content</h2>
+                <label for="modal-content-input">Content:</label>
+                <textarea id="modal-content-input" class="modal-input"></textarea>
+                <label for="modal-author-input">Author:</label>
+                <input type="text" id="modal-author-input" class="modal-input">
+                <div class="modal-buttons">
+                    <button id="modal-update-button">Update</button>
+                    <button id="modal-cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+        
+    <script src="js/script.js"></script>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <!------------------FOOTER-------------------->
+        </div>
+    </footer>
+    
+</div>
+</body>
+</html>

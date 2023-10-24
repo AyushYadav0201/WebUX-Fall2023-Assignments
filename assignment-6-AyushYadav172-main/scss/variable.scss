@@ -1,0 +1,24 @@
+// variable.scss
+
+// Colors
+$primary-color: goldenrod;
+$secondary-color: teal;
+$bg-color: black;
+
+// Borders
+$border-radius: 10px;
+$border-width: 1px;
+$border-color: $primary-color;
+
+// Font
+$font-size: 16px;
+$text-color: white;
+
+// Button
+$button-padding: 10px 20px;
+$button-margin: 5px 15px;
+
+// Modal
+$modal-bg-color: rgba(0, 0, 0, 0.5);
+$modal-content-bg: #fff;
+$modal-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);

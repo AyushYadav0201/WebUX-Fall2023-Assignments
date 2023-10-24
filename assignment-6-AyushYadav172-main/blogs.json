@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Lorem ipsum dolor sit amet consectetur.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit turpis cursus in hac. Ullamcorper morbi tincidunt ornare massa eget. Lorem mollis aliquam ut porttitor leo a. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Facilisis mauris sit amet massa vitae. Quis viverra nibh cras pulvinar mattis nunc. Eu feugiat pretium nibh ipsum. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Sed odio morbi quis commodo odio aenean sed adipiscing. Quis varius quam quisque id. Sit amet justo donec enim diam vulputate ut pharetra sit. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Morbi leo urna molestie at elementum eu facilisis sed. Massa sed elementum tempus egestas sed. Euismod in pellentesque massa placerat. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Massa sapien faucibus et molestie ac feugiat. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem.",
+        "author": "Marcus Tullius Cicero",
+        "creationDate": "January 3, 106BC",
+        "imageUrl": "https://www.techomoro.com/wp-content/uploads/2019/09/lorem-ipsum.jpg"
+    },
+    {
+        "title": "The incredible logistics of F1 and how the sport moves more sustainably than ever around the world",
+        "content": "Each Formula 1 outfit requires a vast amount of items to compete, and on the latest episode of the F1 Explains podcast, the team take a closer look at the behind-the-scenes logistics involved in moving these parts from race to race. Ahead of the Las Vegas Grand Prix, its promoters have launched a first-of-its-kind water conservation program, as they look to implement technologies that can reduce, and eventually offset, outdoor water consumption at large-scale sporting events. The water conservation program will be rolled out at the MGM Grand Hotel & Casino, in partnership with Southern Nevada Water Authority (SNWA), WaterStart and MGM Resorts. At scale, the water conservation program could make it possible for the event to be the first Net-Zero Water Consumption race in Formula 1 history.",
+        "author": "Katie Osborne and Christian Hewgill",
+        "creationDate": "October 20, 2023",
+        "imageUrl": "https://getwallpapers.com/wallpaper/full/2/6/3/544187.jpg"
+    },
+    {
+        "title": "Which AI Tool Writes the Best Marketing Copy?",
+        "content": "Even the most seasoned writer can struggle to keep up with demand, so taking advantage of the AI tools available to streamline your process and boost your productivity is crucial.AI copywriting combines natural language processing with machine learning to generate copy for social media, blogs, websites, landing pages, scripts, and more. Though AI generates the copy, the intention is for it to sound like a human wrote it. Furthermore, AI-generated copy is crafted quickly, helping marketers meet deadlines and allot more time toward other responsibilities.",
+        "author": "Erica Santiago",
+        "creationDate": "October 23, 2023",
+        "imageUrl": "https://sbr-technologies.com/wp-content/uploads/2020/07/ai.jpg"
+    },
+    {
+        "title": "The New Frontier: How AI Will Impact Businesses in 2023",
+        "content": "Business leaders are always responsible for steering the ship and making big-picture decisions, so it’s no surprise that many are already implementing AI-powered tech into their business models and teams — with 62% reporting that their company has already invested in AI/automation tools for employees to leverage in their roles. And the trend will likely not only continue in 2023 but also steeply increase: 43% of business leaders say they plan to increase their investment in AI/automation tools over the course of 2023, and 31% of business leaders say AI/automation tools are very important to their overall business strategy.",
+        "author": "Sara Freidman",
+        "creationDate": "June 17, 2023",
+        "imageUrl": "https://blog.hubspot.com/hs-fs/hubfs/newfrontier_02.png?width=893&height=600&name=newfrontier_02.png"
+    }
+]
