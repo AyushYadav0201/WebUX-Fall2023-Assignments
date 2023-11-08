@@ -1,0 +1,78 @@
+openapi : 3.1.0
+info: 
+  title: Course Search API
+  description: REST API to search courses offered.
+  version: 'v1.0'
+servers: 
+  - url: http://localhost:8080
+paths: 
+ /courseOfferings:
+  get: 
+    operationId: search-course-offering
+    description: Search courses offered
+    parameters: 
+      - name: semester
+        in: query
+        required: false
+        example: fall
+        schema:
+          type: string
+      - name: year
+        in: query
+        required: false
+        example: 2023
+        schema:
+          type: string
+    responses:
+      "200":
+        description: Successful search
+        content:
+          application/json:
+            schema:
+              type: object
+              $ref: "#/components/schemas/CourseOffering"
+      "401":
+        description: Unauthenticated request
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    CourseOffering:
+      type: object
+      properties:
+        id:
+          type: string
+          examples:
+            - sgdn-243n4-242fsf
+        name:
+          type: string
+          examples:
+            - INFO 6150
+        schedule:
+          $ref: "#/components/schemas/CourseOffering"
+    Schedule:
+      type: object
+      properties:
+        start-time:
+          type: string
+          examples:
+            - "2023-11-12T13:14:15Z" 
+        end-time:
+          type: string
+          examples:
+            - "2023-12-12T13:14:15Z"
+    Error:
+      type: object
+      properties: 
+        code:
+          type: string
+          description: Error code
+          examples:
+            - AuthenticationError
+        message:
+          type: string
+          description: Error messages
+          examples:
+            - User is not authenticated.
