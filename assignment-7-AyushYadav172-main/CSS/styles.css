@@ -1,0 +1,83 @@
+body {
+    text-align: center;
+    background-color: rgb(50, 46, 46);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+canvas {
+    border-radius: 20px 20px 0 0;
+    margin: 2px auto;
+    display: block;
+    background-color: rgb(55, 55, 55);
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.digit {
+    background-color: grey;
+    color: white;
+}
+
+.digit:hover {
+    background-color: #eee;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+.operator {
+    background-color: #ff9900;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #ffcc33;
+}
+
+.parenthesis {
+    background-color: grey;
+    color: white;
+}
+
+.parenthesis:hover {
+    background-color: #eee;
+}
+
+.blank {
+    background-color: rgb(93, 92, 92);
+    color: white;
+}
+
+#equals {
+    background-color: #ff9900;
+    color: white;
+    border-radius: 0 0 20px 0;
+}
+
+#equals:hover {
+    background-color: #ffcc33;
+}
+
+#clear {
+    border-radius: 0 0 0 20px;
+}
